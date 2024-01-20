@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean: Appunti della prima lezione </title>
+</head>
+
+<body>
+    <div id="bordo">
+        <div class="ph">
+            <h1 id="htmlFund">Cos'è l'HTML</h1>
+            <p id="firstPh">
+                L'HTMl è la base del web: è l'unico linguaggio di programmazione in grado di strutturare le pagine web
+                ovvero metterci il contenuto sopra, senza l'HTML non ci sarebbe nessun modo di aggiungere il contenuto.
+                <br>Momentaneamente il linguaggio html è arrivato alla 5 versione (che ovviamente ha solo alcune
+                aggiunte rispetto alla vastità delle cose gia presenti).
+                <br>L'HTML si occupa della parte visiva del sito, cioè più specificatamente si occupa del contenuto del
+                sito e non è un
+                linguaggio di programmazione ma di Markup(HTML=Hypertext Markup Language). Come facciamo a definire
+                cos'è un linguaggio di programmazione?
+                <br>Un linguaggio di programmazione contiene LOGICA: elementi che permettono di fare dei ragionamenti
+                (es:Se...allora, fai fino a che, etc. ) e sono costrutti tipi di un linguaggio di programmazione.
+                <br>L'HTML non contiene ciò poichè è un liguaggio che definisce solo il contenuto della pagina
+                <br>
+            <div id="info">
+                <img src="/Media/Photo/triggered Barbero.jpg" alt="Triggered Barbero" class="photo">
+                <h2 id="historyPh"></h2>
+                <p>
+                    L'HTML nasce nel 1990 da Tims Berners-Lee, mentre lavorava al CERN di Ginevra, inventa il World Wibe
+                    Web. Lo scopo principale di Lee era la condivisione di paper scientifici (documenti scientifici, con
+                    una struttura ben definita, che enunciano teorie, tesi, scoperte, etc. ) tra le università.
+                    <br>Insieme a ciò lo stesso team scrive anche la prima versione di HTML e Nexus(il primo web client
+                    cioè il primo browser della storia). In sintesi possiamo dire che l'HTML deve essere visto ed
+                    interpretato dal browser (Chrome, Safari, Firefox, etc.), quindi il browser legge il codice HTML e
+                    ne fa vedere il risultato grafico.
+                </p>
+            </div>
+            <!-- Sat 13.50 20/01/2024: relative about 1 info boundaries -->
+            </p>
+            <!-- Sat 12.10 20/01/2024: relative about Html Fundamentals Paragraph -->
+            <div id="explMarkupLang-container">
+                <h1 id="explMarkupLang">Il linguaggio di Markup</h1>
+                <p id="secPh">
+                    Quindi cosa si intende con il linguaggio di Markup?
+                    <br>Significa, traducendolo in maniera un po' impropria, "Segnalatore" cioè un pezzo di testo che
+                    dice quello che c'è intorno a me ha delle certe caratteristiche: ovvero i Tags.
+                    <br>T. Berners-Lee nel 1990 doveva codificare, cioè creare una codifica di codice, che ci
+                    permettesse
+                    di trasmettere il testo, che fosse la possibilità di trasmettere la formattazione del testo
+                    (grassetto, corsivo, sottolienatura, grandezza dei caretteri, etc.), inoltre questa codifica deve
+                    essere scritta da un essere umano ma tendo a mente che l'utilizzatore non doveva avere per
+                    forza compentenze di programmazione.
+                    <br>La Soluzione di Berners-Lee fu:
+                    <br>&lt;tag&gt;Hello World!&lt;tag&gt;
+                    <br>Ciò vuol dire: ho un testo e voglio dire qualcosa in piu di quel testo, ad esempio che è in
+                    grassetto, di conseguenza io decido che da qui inizia il testo che ha quella determinata
+                    caratteristica(&lt; &gt;), e poi mi invento un altro delimitatore che è molto simile a quello di
+                    inizio, ma ha uno slash all'inizio che mi va ad indicare che qui finisce quella parte di testo che
+                    ha quella caratteristica che ha iniziato quel tag (&lt;/&gt;).
+                    <br>Detto in maniera semplice:
+                    <br>&lt;tag&gt; : delimita l'inizio della parte di testo
+                    <br>&lt;/tag&gt; : delimita la fine della parte di testo
+                    <br>Es:
+                    <br> &lt;strong&gt; <strong> testo </strong> &lt;/strong&gt;
+                    <br>Quindi l'Html e conoscere i tags e capire le combinazioni di tag affinchè si abbia il risultato
+                    voluto.
+                </p>
+                <!-- Sat 15.33 20/01/2024: relative second paragraph -->
+            </div>
+            <!-- Sat 14.56 20/01/2024: relative about second Paragraph container  -->
+            <div id="tag-container">
+                <h1 id="htmlTags">I tags di HTML</h1>
+                <p id="thirdPh">
+                <ul>
+                    <li>
+                        <strong>&lt;p&gt;</strong>paragrafo <strong>&lt;/p&gt;</strong>
+                    </li>
+                    <li>
+                        <strong>&lt;h1&gt;</strong> heading o intestazione <strong>&lt;/h1&gt;</strong> (da 1 a 6)
+                    </li>
+                    <li>
+                        <strong>&lt;ol&gt;</strong> Ordered List <strong>&lt;/ol &gt;</strong>
+                    </li>
+                    <li>
+                        <strong>&lt; ul&gt;</strong> Unordered list <strong>&lt;/ul &gt;</strong>
+                    </li>
+                    <li>
+                        <strong>&lt; li&gt;</strong>list item <strong>&lt; /li&gt;</strong> : servono per inserire gli
+                        item dentro sia la unordered list che la ordered list
+                    </li>
+                    <li>
+                        <strong>&lt; button&gt;</strong> click <strong>&lt;/button &gt;</strong> : serve per creare
+                        bottoni con del testo interno
+                    </li>
+                    <li>
+                        <strong>&lt;hr &gt;</strong> (horizontal rule/line)
+                    </li>
+                    <li>
+                        <strong>&lt;em &gt;</strong> italic o corsivo <strong>&lt;/em &gt;</strong>
+                    </li>
+                    <li>
+                        <strong>&lt; strong&gt;</strong> grasetto <strong>&lt; /strong&gt;</strong>
+                    </li>
+                    <li>
+                        <strong>&lt;div&gt;</strong><strong>&lt;/div&gt;</strong>
+                    </li>
+                    <li>
+                        <strong>&lt;span&gt;</strong><strong>&lt;/span&gt;</strong>
+                    </li>
+                </ul>
+                Per quanto riguarda gli headings tocca puntualizzare che h1 è più importante di h6 e verra visualizzato,
+                di consequenza più grande di h6, tutti questi headings (h1, h2, h3, h4, h5, h6) possono essere ripetuti
+                all'infinito all'interno del documento HTML ma non vanno oltre l'h6.
+                </p>
+                <!-- Sat 16.13 20/01/2024: relative about third paragraph -->
+                <h2>I diversi tipi di tags</h2>
+                <p id="fourthPh">
+                    <br>Prima di continuare bisogna dire che un <i>"elemento"</i> è ciò che risulta dallo scrivere
+                    correttamente un tag;
+                    <br>Es: &lt;p&gt;Hello World!&lt;p&gt;
+                    <br>Tutto questo viene chiamato elemento.
+                    <br> Tornando ai diversi tipi di tag ci sono 3 tipi differenti:
+                <ol type="1.">
+                    <li>Block level Tags :
+                        <br>Crea un elemento di tipo "block", cioè che occupa una intera linea, quindi
+                        obbliga gli elementi successivi ad andare su una nuova linea (es:&lt;p&gt;).
+                        <br>Detto terra terra non possono avere nessun tag dopo il loro tag di chiusura.
+                    </li>
+                    <li>Inline tags:
+                        <br>Non obbliga gli elementi successivi ad andare su una nouva linea, rimangono tutti sulla
+                        stessa linea (per l'appunto in-line) (es: &lt;em&gt;).
+                        <br>Quindi ad esempio tutti i tag che si usano per la formattazzione del testo sono tutti
+                        Inline.
+                    </li>
+                    <li>Self closing tags:
+                        Sono tutti i tag che non hanno bisogno di tag di chiusura (es: &lt;hr&gt;)
+                    </li>
+                </ol>
+                Gli ultimi tag mostrati il paragrafo prima (div e span) sono tag container e servono per contenere un
+                insieme di tag, il codice HTML è molto strutturato da tag che contengono al loro volta dei tag che poi a
+                loro volta possono contenere altri tag o il contenuto della pagina web.
+                <br>Questi tipi di tags non hanno nessun tipo di formattazzione ma hanno il solo scopo di contenere roba,
+                ed è ciò che esattemente fanno i tag container. 
+                <br>I due tipi più utilizzati sono 
+                <ul>
+                    <li>
+                        &lt;div&gt;&lt;/div&gt;:
+                        <br>un Block element container, non ci possono essere due o più div sulla stessa riga 
+                    </li>
+                    <li>
+                        &lt;span&gt;&lt;/span&gt;:
+                        <br>un Inline container, ci possono essere più tag sulla stessa linea 
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <!-- Sat 16.01 20/01/2024: relative about tag container -->
+        </div>
+        <!-- Sat 12.03 20/01/2024: relative about all paragraph  -->
+    </div>
+    <!-- Sat 12.03 20/01/2024: relative about boundaries -->
+</body>
+
+</html>
